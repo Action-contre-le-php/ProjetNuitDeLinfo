@@ -4,14 +4,14 @@ export class Dialog {
     id: number;
     title: string;
     contents: string;
-    answers: Answer[];
+    answersId: number[];
     link: string[]
 
-    constructor(Id: number, Title: string, Contents: string, Answers: Answer[], Link: string[]) {
+    constructor(Id: number, Title: string, Contents: string, AnswersId: number[], Link: string[]) {
         this.id = Id
         this.title = Title;
         this.contents = Contents;
-        this.answers = Answers;
+        this.answersId = AnswersId;
         this.link = Link;
     }
 }
