@@ -1,15 +1,15 @@
-import {Dialog} from "./dialog";
+import Dialog from "./dialog";
 
-export class Answer{
+export default class Answer {
     id : number = 0;
     text : string = '';
     dialogId : number;
-    previousAnswer : number[] = [];
+    prerequisites : number[];
 
-    constructor(Id: number  ,Text:string ,previousAnswer: number[], DialogId: number ) {
+    constructor(Id: number  ,Text:string, DialogId: number, Prerequisites: number[]) {
         this.id = Id;
         this.text = Text;
-        this.previousAnswer = previousAnswer;
+        this.prerequisites = Prerequisites;
         this.dialogId = DialogId;
     }
 }
