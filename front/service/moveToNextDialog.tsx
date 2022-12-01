@@ -1,10 +1,16 @@
-import {User} from "../models/user";
-import {Dialog} from "../models/dialog";
-import {Answer} from "../models/answer";
+import User from "../models/user";
+import Dialog from "../models/dialog";
+import Answer from "../models/answer";
 
-export function MoveToNextDialog (user: User, actualDialog: Dialog, answerChoose: Answer, allDialog: Dialog[]) {
+export default function MoveToNextDialog (user: User, actualDialog: Dialog, answerChoose: Answer, allDialog: Dialog[]): Dialog {
     user.lastDialogId = actualDialog.id;
     user.historyAnswersId.push(answerChoose.id);
     user.currentDialogId = answerChoose.dialogId;
-    return allDialog.find(t => t.id == answerChoose.dialogId)
+    let result: Dialog | undefined = allDialog.find(t => t.id == answerChoose.dialogId);
+
+    if (result === undefined){
+        throw new Error();
+    }
+
+    return result;
 }

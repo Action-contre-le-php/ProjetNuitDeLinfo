@@ -1,7 +1,7 @@
-import {Answer} from "./answer";
-import {Dialog} from "./dialog";
+import Answer from "./answer";
+import Dialog from "./dialog";
 
-export class User{
+export default class User{
     name : string;
     historyAnswersId : number[];
     currentDialogId: number;
