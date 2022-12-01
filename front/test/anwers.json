@@ -1,0 +1,28 @@
+{
+  "answers": [
+    {
+      "id": 1,
+      "text": "first answer",
+      "dialogId": 2,
+      "prerequisites": []
+    },
+    {
+      "id": 2,
+      "text": "second answer",
+      "dialogId": 3,
+      "prerequisites": []
+    },
+    {
+      "id": 3,
+      "text": "third answer",
+      "dialogId": 2,
+      "prerequisites": []
+    },
+    {
+      "id": 4,
+      "text": "fourth answer",
+      "dialogId": 3,
+      "prerequisites": []
+    }
+  ]
+}
