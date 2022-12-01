@@ -1,5 +1,5 @@
 import { Button } from "@material-tailwind/react";
-
+import Link from "next/link";
 export default function Home() {
   return (
     <div className='flex flex-col space-y-32 m-32'>
@@ -18,7 +18,9 @@ export default function Home() {
         </p>
       </div>
       <div className='self-center'>
+        <Link href="/game">
         <Button size="lg" color="green">Commencer le Jeu de la vie</Button>
+        </Link>
       </div>
     </div>
   )
