@@ -14,7 +14,7 @@ export default function Footer() {
  
   const handleOpen = () => setOpen(!open);
     return (
-      <div>
+      <div className="w-full">
         <Fragment>
       <Dialog open={open} handler={handleOpen}>
         <DialogHeader>Êtes vous sûr de vouloir continuer ?</DialogHeader>
