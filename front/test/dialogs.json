@@ -4,7 +4,7 @@
       "id": 0,
       "title": "first dialog",
       "contents": "azertyazertyazertyazertyazertyazertyazertyazertyazertyazertyazertyazerty",
-      "answersId": [0, 1],
+      "answersId": [0, 1, 2],
       "links": [{
         "name": "google",
         "url": "google.com"

@@ -4,25 +4,45 @@
       "id": 0,
       "text": "first answer",
       "dialogId": 1,
-      "prerequisites": []
+      "prerequisites": [
+      {
+        "answersIds": [],
+        "allMandatory": true
+      }
+      ]
     },
     {
       "id": 1,
       "text": "second answer",
-      "dialogId": 2,
-      "prerequisites": []
+      "dialogId": 1,
+      "prerequisites": [
+        {
+          "answersIds": [],
+          "allMandatory": true
+        }
+      ]
     },
     {
       "id": 2,
       "text": "third answer",
       "dialogId": 1,
-      "prerequisites": []
+      "prerequisites": [
+        {
+          "answersIds": [],
+          "allMandatory": true
+        }
+      ]
     },
     {
       "id": 3,
       "text": "fourth answer",
       "dialogId": 2,
-      "prerequisites": []
+      "prerequisites": [
+        {
+          "answersIds": [1],
+          "allMandatory": true
+        }
+      ]
     }
   ]
 }
