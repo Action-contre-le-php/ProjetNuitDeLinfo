@@ -4,7 +4,7 @@ import Answer from "../models/answer";
 
 export default function MoveToNextDialog (user: User, actualDialog: Dialog, answerChoose: Answer, allDialogs: Dialog[], allAnswers: Answer[]): Dialog {
     user.lastDialogId = actualDialog.id;
-    user.historyAnswersId.push(answerChoose.id);
+    user.historyAnswersIds.push(answerChoose.id);
     user.currentDialogId = answerChoose.dialogId;
     let result: Dialog | undefined = allDialogs.find(dialog => dialog.id == answerChoose.dialogId);
 

@@ -1,25 +1,34 @@
 {
   "dialogs": [
     {
-      "id": 1,
+      "id": 0,
       "title": "first dialog",
       "contents": "azertyazertyazertyazertyazertyazertyazertyazertyazertyazertyazertyazerty",
-      "answersId": [1, 2],
-      "link": ["google.com"]
+      "answersId": [0, 1],
+      "links": [{
+        "name": "google",
+        "url": "google.com"
+      }]
+    },
+    {
+      "id": 1,
+      "title": "second dialog",
+      "contents": "azertyazertyazertyazertyazertyazertyazertyazertyazertyazertyazertyazerty",
+      "answersId": [2, 3],
+      "links": [{
+        "name": "google",
+        "url": "google.com"
+      }]
     },
     {
       "id": 2,
-      "title": "second dialog",
-      "contents": "azertyazertyazertyazertyazertyazertyazertyazertyazertyazertyazertyazerty",
-      "answersId": [3, 4],
-      "link": ["google.com"]
-    },
-    {
-      "id": 3,
       "title": "third dialog",
       "contents": "azertyazertyazertyazertyazertyazertyazertyazertyazertyazertyazertyazerty",
-      "answersId": [5, 6],
-      "link": ["google.com"]
+      "answersId": [2, 1],
+      "links": [{
+        "name": "google",
+        "url": "google.com"
+      }]
     }
   ]
 }
