@@ -1,0 +1,39 @@
+{
+  "dialogs": [
+    {
+      "id": 0,
+      "title": "INTRO",
+      "contents": "tu est chez toi, alors que tu émerge d’un lourd sommeil, la tête migraineuse, la douce lumière de ton téléphone te rappelle la veille : une soirée légèrement alcoolisé avec des amis qui te laisse un goût amer en bouche. L’ambiance ayant très vite virer de la soirée étudiante à l’humiliation quand vos amis ont commencer à parler de leurs conquêtes de cœur… et d’ailleurs. Loin d’être un bourreau des coeur, tu n’as jamais eu de partenaire, attendant de tomber sur une personne qui te met en confiance. D’autant plus que tu n’as jamais réussi à définir votre attirance sexuelle. Homme ? Femme ? Les deux ? Aucun ? Votre choix n’est pas graver dans le marbre mais l’idée d’en faire un te glace le sang. Après un quart d’heure à te perdre dans vos pensée, votre main ce met à vibrer et tu remarque une notification.\n\nUn message de Florent, ami d’enfance, t’ invite à une soirée. Le choix est tiens: veux tu y aller ou restez chez toi?",
+      "answersId": [0, 1],
+      "link": []
+    },
+    {
+      "id": 1,
+      "title": "",
+      "contents": "Après avoir récupérer l’adresse et l’heure de rendez-vous, tu passe la journée à te remettre de la veille et à te préparer. 19 Heure pétante, te est prêt(e) à te rendre à votre destination, à un détail prêt… tu n’en as jamais eu besoin mais un kit de contraception pourrais t’être utile il contient des préservatifs masculin et deux pilules du lendemain. Désire tu le prendre ou non ?",
+      "answersId": [2, 3],
+      "link": []
+    },
+    {
+      "id": 2,
+      "title": "",
+      "contents": "Les souvenirs de la veille te pèse et tu te ravise. Tu descend les marches de ton escalier trois par trois pour éviter de te mettre en retard d’autant plus que n’ayant pas le permit, c’est Florent qui c’est proposer pour t’emmener.",
+      "answersId": [4],
+      "link": []
+    },
+    {
+      "id": 3,
+      "title": "",
+      "contents": "Ça ne pèse pas grand-chose et que ça te serve ou non c’est toujours mieux de pouvoir ce protéger. ( ajoute un kit de contraception dans ton inventaire ). Florent, qui t’emmène à la soirée t’envoie un message pour savoir si tout va bien, tu comprend alors qu’il est en bas et dévale les marches pour le rejoindre.",
+      "answersId": [4],
+      "link": []
+    },
+    {
+      "id": 4,
+      "title": "ACTE 1: LA SOIRÉE",
+      "contents": "En voiture, alors qu’il roule et que googeule maps lui in dique la route, Florent brise la glace et te dit « t’as une tronche de déterrer, tout va bien ? » \n« ouais… la soirée de hier qui me tape dans la tête... » Réplique tu.\n« Boh t’en fait pas, tu te ferra peut-être une connaissance ce soir ! Qui sait ou ça t’emmènera... »\nContemplant le visage visiblement heureux de ça blague sur le visage de ton ami, tu te contente de lui sourire et profite du fait que vous arrivez à destination.\n\nDevant la gigantesque maison devant laquelle tu te trouve tu commence à paniquer avant de sentir la main de ton compagnon sur ton épaule avant qu’il ne te dispense une de ces paroles de sage : « soit cool ! Sourit juste et tout ira bien ! »  \n\nTu inspire et rentre dans la bâtisse où vous attendent une quantité folle d’invités, certains déjà ivre mort, beaucoup sont en train de discuter ou de jouer à un jeu de soirée le tout sur fond d’une douce musique sans doute choisi par l’hôte de la résidence. La tournure des évènements de ce soir risque de bien changer celons votre prochain choix : restez avec Florent ou aller voir de nouveau gens ? ",
+      "answersId": [5, 6],
+      "link": []
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "answers": [
+    {
+      "id": 0,
+      "text": "Choix non :",
+      "dialogId": 0,
+      "prerequisites": []
+    },
+    {
+      "id": 1,
+      "text": "Choix oui :",
+      "dialogId": 1,
+      "prerequisites": []
+    },
+    {
+      "id": 2,
+      "text": "Choix non :",
+      "dialogId": 2,
+      "prerequisites": []
+    },
+    {
+      "id": 3,
+      "text": "Choix oui :",
+      "dialogId": 3,
+      "prerequisites": []
+    },
+    {
+      "id": 4,
+      "text": "Suivant :",
+      "dialogId": 4,
+      "prerequisites": []
+    }
+  ]
+}
