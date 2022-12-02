@@ -17,6 +17,13 @@ function GetAnswer(id:number) : Answer | undefined {
     return answers.find(a => a.id == id);
 }
 
+function RemoveLastAction(user: User){
+    if (user.historyAnswersIds.length > 0) {
+        user.lastDialogId = -1;
+        user.historyAnswersIds.pop();
+    }
+}
+
 function GetDialogAnswers(dialogId:number) : Answer[] {
     let ids: number[] = dialogs.find(d => d.id == dialogId)?.answersId || [];
     let result: Answer[] = [];
@@ -39,4 +46,4 @@ function AddDialogToUserHistory(dialogId:number, user:User) {
     user.historyAnswersIds.push(dialogId);
 }
 
-export default {GetDialog, GetAnswer, GetDialogAnswers, GetDialogs, AddDialogToUserHistory};
+export default {GetDialog, GetAnswer, GetDialogAnswers, GetDialogs, AddDialogToUserHistory, RemoveLastAction};
