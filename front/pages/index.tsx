@@ -13,7 +13,7 @@ const Home = () => {
         await router.push('/game')
     }
   return (
-    <div className='flex flex-col space-y-32 m-32'>
+    <div className='flex flex-col space-y-32 m-32 max-h-fit'>
       <div className='self-center'>
         <h1>Jeu de la Vie</h1>
       </div>
@@ -38,7 +38,7 @@ const Home = () => {
                       defaultValue={user.name}
                       onChange={(e)=> user.name = e.target.value} type="text" id="name" className="form-control"/>
               </div>
-        <Button size="lg" onClick={() => login()} color="green">Commencer le Jeu de la vie</Button>
+        <Button size="lg" onClick={() => login()} color="pink">Commencer le Jeu de la vie</Button>
 
 
               </form>
