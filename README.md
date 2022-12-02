@@ -5,3 +5,17 @@ Technologies utilisées :
   - NextJS (Framework Front)
   - Tailwindcss - Material Tailwind (Framework css)
   - Docker (Mise en production) 
+
+## Démarrage du projet
+
+Dev
+```
+  npm install
+  npx next dev
+```
+
+Prod
+```
+  docker build -t nextjs-docker .
+  docker run -p 3000:3000 nextjs-docker
+```
