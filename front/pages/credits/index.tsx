@@ -11,7 +11,7 @@ export default function Credits() {
           </span>
         </div>
         <div className="self-center">
-          <Image src={teamPicture} alt="photo de l'équipe" />
+          <Image src={teamPicture} alt="photo de l'équipe" width={1000} height={1000}/>
         </div>
       </div>
     </>
