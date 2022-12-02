@@ -1,5 +1,5 @@
 import {Card, CardBody, Typography} from "@material-tailwind/react";
-import {Answer} from "../../../models/answer";
+import Answer from "../../../models/answer";
 
 type AnswerComponentType = {
     answer: Answer,

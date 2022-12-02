@@ -1,6 +1,17 @@
-import { Button } from "@material-tailwind/react";
-import Link from "next/link";
-export default function Home() {
+import {Button, Input} from "@material-tailwind/react";
+import {getCookie, setCookie} from "cookies-next";
+import User from "../models/user";
+import {useRouter} from 'next/router'
+
+const Home = () => {
+    let router = useRouter()
+    let user: User  =  new User!("name", [], 0, 0)
+   const login  =async () =>{
+
+        setCookie('userName',user )
+       console.log(getCookie('userName'));
+        await router.push('/game')
+    }
   return (
     <div className='flex flex-col space-y-32 m-32 max-h-fit'>
       <div className='self-center'>
@@ -18,10 +29,21 @@ export default function Home() {
         </p>
       </div>
       <div className='self-center'>
-        <Link href="/game">
-        <Button size="lg" color="pink">Commencer le Jeu de la vie</Button>
-        </Link>
+          <form onSubmit={() => login()}>
+              <div className="input-group input-group-outline">
+                  <label className="form-label">Ecris ton nom </label>
+
+                  <Input
+                      placeholder="Ecris ton nom"
+                      defaultValue={user.name}
+                      onChange={(e)=> user.name = e.target.value} type="text" id="name" className="form-control"/>
+              </div>
+        <Button size="lg" onClick={() => login()} color="pink">Commencer le Jeu de la vie</Button>
+
+
+              </form>
       </div>
     </div>
   )
 }
+export default Home;
