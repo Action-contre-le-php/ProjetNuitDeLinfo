@@ -3,13 +3,13 @@ import Dialog from "./dialog";
 
 export default class User{
     name : string;
-    historyAnswersId : number[];
+    historyAnswersIds : number[];
     currentDialogId: number;
     lastDialogId : number;
 
-    constructor(Name : string, HistoryAnswersId : number[], CurrentDialogId: number, LastDialogId: number) {
+    constructor(Name : string, CurrentDialogId: number, LastDialogId: number) {
         this.name = Name;
-        this.historyAnswersId = HistoryAnswersId;
+        this.historyAnswersIds = [];
         this.currentDialogId = CurrentDialogId;
         this.lastDialogId = LastDialogId;
     }

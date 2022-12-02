@@ -5,6 +5,9 @@ import NavBar from '../components/navBar';
 import Footer from '../components/footer';
 
 export default function App({ Component, pageProps }: AppProps) {
+
+    console.warn("Salut comment est ce que ça va ? Pensez à bien vous hydrater !");
+
   return (
     <ThemeProvider>
       <NavBar/>
