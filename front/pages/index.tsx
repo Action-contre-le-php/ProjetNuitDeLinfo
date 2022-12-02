@@ -1,12 +1,16 @@
 import {Button, Input} from "@material-tailwind/react";
 import {getCookie, setCookie} from "cookies-next";
-import {User} from "../models/user";
+import User from "../models/user";
+import {useRouter} from 'next/router'
+
 const Home = () => {
+    let router = useRouter()
     let user: User  =  new User!("name", [], 0, 0)
    const login  =async () =>{
 
         setCookie('userName',user )
        console.log(getCookie('userName'));
+        await router.push('/game')
     }
   return (
     <div className='flex flex-col space-y-32 m-32'>

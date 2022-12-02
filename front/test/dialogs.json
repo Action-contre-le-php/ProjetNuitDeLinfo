@@ -1,0 +1,25 @@
+{
+  "dialogs": [
+    {
+      "id": 1,
+      "title": "first dialog",
+      "contents": "azertyazertyazertyazertyazertyazertyazertyazertyazertyazertyazertyazerty",
+      "answersId": [1, 2],
+      "link": ["google.com"]
+    },
+    {
+      "id": 2,
+      "title": "second dialog",
+      "contents": "azertyazertyazertyazertyazertyazertyazertyazertyazertyazertyazertyazerty",
+      "answersId": [3, 4],
+      "link": ["google.com"]
+    },
+    {
+      "id": 3,
+      "title": "third dialog",
+      "contents": "azertyazertyazertyazertyazertyazertyazertyazertyazertyazertyazertyazerty",
+      "answersId": [5, 6],
+      "link": ["google.com"]
+    }
+  ]
+}

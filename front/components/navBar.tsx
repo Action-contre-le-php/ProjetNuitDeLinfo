@@ -5,7 +5,7 @@ export default function NavBar() {
     <>
       <nav className="flex items-center flex-wrap p-3">
         <Link href="/" className='inline-flex items-center p-2 mr-4'>
-          <span className='text-xl text-white font-bold uppercase tracking-wide'>
+          <span className='text-xl dark:text-white font-bold uppercase tracking-wide'>
             Accueil
           </span>
         </Link>

@@ -1,6 +1,6 @@
-import {Answer} from "./answer";
+import Answer from "./answer";
 
-export class Dialog {
+export default class Dialog {
     id: number;
     title: string;
     contents: string;
