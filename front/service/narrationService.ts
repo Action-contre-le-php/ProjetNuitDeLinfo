@@ -9,6 +9,10 @@ function GetDialogs(){
     return dialogs;
 }
 
+function GetAnswers(){
+    return answers;
+}
+
 function GetDialog(id:number) : Dialog | undefined {
     return dialogs.find(d => d.id == id);
 }
@@ -39,4 +43,4 @@ function AddDialogToUserHistory(dialogId:number, user:User) {
     user.historyAnswersIds.push(dialogId);
 }
 
-export default {GetDialog, GetAnswer, GetDialogAnswers, GetDialogs, AddDialogToUserHistory};
+export default {GetDialog, GetAnswer, GetDialogAnswers, GetDialogs, AddDialogToUserHistory, GetAnswers};

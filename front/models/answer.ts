@@ -1,12 +1,12 @@
-import Dialog from "./dialog";
+import Prerequisite from "./Prerequisite";
 
 export default class Answer {
     id : number = 0;
     text : string = '';
     dialogId : number;
-    prerequisites : number[];
+    prerequisites : Prerequisite[];
 
-    constructor(Id: number  ,Text:string, DialogId: number, Prerequisites: number[]) {
+    constructor(Id: number  ,Text:string, DialogId: number, Prerequisites: Prerequisite[]) {
         this.id = Id;
         this.text = Text;
         this.prerequisites = Prerequisites;
