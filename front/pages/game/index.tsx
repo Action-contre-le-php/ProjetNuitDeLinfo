@@ -5,10 +5,10 @@ import AnswerComponent from "./components/AnswerComponent";
 import Answer from "../../models/answer";
 import {useEffect, useState} from "react";
 import Dialog from "../../models/dialog";
-import narrationService from "../../service/narrationService";
 import {getCookie} from "cookies-next";
 import User from "../../models/user";
 import MoveToNextDialog from "../../service/moveToNextDialog";
+import narrationService from "../../service/narrationService";
 
 const GamePage : NextPage = () => {
 
@@ -24,7 +24,7 @@ const GamePage : NextPage = () => {
     }
 
     function GoBack() {
-        if (canGoBack) {
+        if (canGoBack && currentUser) {
             setCanGoBack(false);
             setCurrentDialog(narrationService.GetDialog(currentUser?.lastDialogId));
             narrationService.RemoveLastAction(currentUser!);
