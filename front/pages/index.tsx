@@ -5,7 +5,7 @@ import {useRouter} from 'next/router'
 
 const Home = () => {
     let router = useRouter()
-    let user: User  =  new User!("name", [], 0, 0)
+    let user: User  =  new User!("name", 0, 0)
    const login  =async () =>{
 
         setCookie('user',user )

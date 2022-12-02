@@ -17,6 +17,7 @@ const GamePage : NextPage = () => {
     let [answers, setAnswers] = useState<Answer[]>([]);
 
     function AnswerClick(answer: Answer) {
+        narrationService.AddDialogToUserHistory(answer.id, currentUser!);
         setCurrentDialog(MoveToNextDialog(currentUser!, currentDialog!, answer, narrationService.GetDialogs()));
     }
 

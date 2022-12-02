@@ -1,5 +1,6 @@
 import Dialog from "../models/dialog";
 import Answer from "../models/answer";
+import User from "../models/user";
 
 let dialogs : Dialog[] = require('../test/dialogs.json')['dialogs'];
 let answers : Answer[] = require('../test/anwers.json')['answers'];
@@ -30,4 +31,12 @@ function GetDialogAnswers(dialogId:number) : Answer[] {
     return result;
 }
 
-export default {GetDialog, GetAnswer, GetDialogAnswers, GetDialogs};
+function AddDialogToUserHistory(dialogId:number, user:User) {
+    if (user.historyAnswersIds === undefined || user.historyAnswersIds.length === 0) {
+        user.historyAnswersIds = [dialogId];
+        return;
+    }
+    user.historyAnswersIds.push(dialogId);
+}
+
+export default {GetDialog, GetAnswer, GetDialogAnswers, GetDialogs, AddDialogToUserHistory};
