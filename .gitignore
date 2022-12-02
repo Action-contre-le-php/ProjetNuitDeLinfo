@@ -4,6 +4,8 @@
 .vs/
 .idea/
 
+./front/.next/
+
 ### NextJS ###
 # Dependencies
 /node_modules
