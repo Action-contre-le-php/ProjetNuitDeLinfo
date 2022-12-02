@@ -59,12 +59,14 @@ const GamePage : NextPage = () => {
     return (
         <div className={"flex flex-col space-y-10 text-center overflow-auto"}>
             <Card id={"DialogCard"} className={"h-96 flex flex-col m-5"}>
-                <CardHeader className={"w-full flex justify-start"}>
-                    <div className={"w-full p-5 "}>
+                <CardHeader className={"w-full"}>
+                    <div className={"w-full p-5 flex space-x-5 justify-center"}>
                         {canGoBack ?
                             (<Button size={"sm"} onClick={() => GoBack()}>
                             Back
                         </Button>) : (<div></div>)}
+
+                        {currentUser ? <div>Vous êtes : {currentUser!.name}</div> : ""}
                     </div>
                 </CardHeader>
                 <CardBody className={"flex-grow"}>

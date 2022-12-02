@@ -9,7 +9,7 @@ type AnswerComponentType = {
 const AnswerComponent = ({answer, onClick}:AnswerComponentType) => {
 
     return (
-        <Card onClick={()=>onClick()} className={"w-full md:w-[35rem] select-none cursor-pointer md:ml-5 mb-5 min-h-[10rem]"}>
+        <Card onClick={()=>onClick()} className={"w-full md:w-[35rem] md:min-h-[7rem] select-none cursor-pointer md:ml-5 mb-5 hover:scale-105 transition-all duration-100"}>
             <CardBody>
                 <Typography>
                     {answer ? answer.text : ""}

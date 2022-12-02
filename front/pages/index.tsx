@@ -1,4 +1,4 @@
-import {Button, Input} from "@material-tailwind/react";
+import {Button, Input, Typography} from "@material-tailwind/react";
 import {setCookie} from "cookies-next";
 import User from "../models/user";
 import {useRouter} from 'next/router'
@@ -8,10 +8,13 @@ import nyanCat from "/public/nyan-cat.gif";
 
 const Home = () => {
   let router = useRouter();
-  let user: User = new User!("name", 0, 0);
+  let user: User = new User!("NONE", 0, 0);
+
   const login = async () => {
-    setCookie('user',user);
-    await router.push('/game');
+    if (user.name !== "NONE") {
+      setCookie('user', user);
+      await router.push('/game');
+    }
   }
   let [nyanCatDisplay, setNyanCatDisplay] = useState("none");
   
@@ -38,7 +41,7 @@ const Home = () => {
       <div className='flex flex-col space-y-16 m-20 max-h-fit'>
         <Image src={nyanCat} alt="photo de l'équipe" style={{float: "left", display: nyanCatDisplay, zIndex: -1, position: "absolute", margin: "auto"}} />
         <div className='self-center'>
-          <h1>Jeu de la Vie</h1>
+          <h3>Une aventure dont vous êtes le héro</h3>
         </div>
         <div>
           <p>
@@ -53,11 +56,10 @@ const Home = () => {
         </div>
         <div className='self-center'>
             <form onSubmit={() => login()}>
-                <div className="input-group input-group-outline">
-                  <label className="form-label">Ecris ton nom </label>
+                <div className="input-group input-group-outline mb-5">
                   <Input
+                      required
                     placeholder="Ecris ton nom"
-                    defaultValue={user.name}
                     onChange={(e) => {user.name = e.target.value;}} type="text" id="name" className="form-control"/>
                 </div>
                 <Button size="lg" onClick={() => login()} color="green">Commencer le Jeu de la vie</Button>
