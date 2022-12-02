@@ -4,7 +4,7 @@
       "id": 0,
       "title": "first dialog",
       "contents": "azertyazertyazertyazertyazertyazertyazertyazertyazertyazertyazertyazerty",
-      "answersId": [1, 2],
+      "answersId": [0, 1],
       "links": [{
         "name": "google",
         "url": "google.com"
@@ -14,7 +14,7 @@
       "id": 1,
       "title": "second dialog",
       "contents": "azertyazertyazertyazertyazertyazertyazertyazertyazertyazertyazertyazerty",
-      "answersId": [3, 4],
+      "answersId": [2, 3],
       "links": [{
         "name": "google",
         "url": "google.com"
@@ -24,7 +24,7 @@
       "id": 2,
       "title": "third dialog",
       "contents": "azertyazertyazertyazertyazertyazertyazertyazertyazertyazertyazertyazerty",
-      "answersId": [5, 6],
+      "answersId": [2, 1],
       "links": [{
         "name": "google",
         "url": "google.com"

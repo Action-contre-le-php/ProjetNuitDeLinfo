@@ -4,8 +4,11 @@ import Answer from "../models/answer";
 let dialogs : Dialog[] = require('../test/dialogs.json')['dialogs'];
 let answers : Answer[] = require('../test/anwers.json')['answers'];
 
+function GetDialogs(){
+    return dialogs;
+}
+
 function GetDialog(id:number) : Dialog | undefined {
-    console.log(dialogs);
     return dialogs.find(d => d.id == id);
 }
 
@@ -27,4 +30,4 @@ function GetDialogAnswers(dialogId:number) : Answer[] {
     return result;
 }
 
-export default {GetDialog, GetAnswer, GetDialogAnswers};
+export default {GetDialog, GetAnswer, GetDialogAnswers, GetDialogs};

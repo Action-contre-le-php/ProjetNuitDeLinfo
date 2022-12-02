@@ -8,8 +8,8 @@ const Home = () => {
     let user: User  =  new User!("name", [], 0, 0)
    const login  =async () =>{
 
-        setCookie('userName',user )
-       console.log(getCookie('userName'));
+        setCookie('user',user )
+
         await router.push('/game')
     }
   return (

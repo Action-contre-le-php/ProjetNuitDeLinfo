@@ -6,22 +6,42 @@ import Answer from "../../models/answer";
 import {useEffect, useState} from "react";
 import Dialog from "../../models/dialog";
 import narrationService from "../../service/narrationService";
+import {getCookie} from "cookies-next";
+import User from "../../models/user";
+import MoveToNextDialog from "../../service/moveToNextDialog";
 
 const GamePage : NextPage = () => {
 
+    let [currentUser, setCurrentUser] = useState<User>();
     let [currentDialog, setCurrentDialog] = useState<Dialog>();
     let [answers, setAnswers] = useState<Answer[]>([]);
+
+    function AnswerClick(answer: Answer) {
+        setCurrentDialog(MoveToNextDialog(currentUser!, currentDialog!, answer, narrationService.GetDialogs()));
+    }
 
     useEffect(() => {
         let firstDialog : Dialog|undefined = narrationService.GetDialog(0);
 
+        let userCookie = getCookie("user");
+        let user = (JSON.parse(userCookie as string) as unknown) as User;
+
+        setCurrentUser(user);
+
         if (firstDialog === undefined){
-            throw new Error("No dialog with id 0");
+            throw new Error("No dialog");
         }
 
         setCurrentDialog(firstDialog);
-        setAnswers(narrationService.GetDialogAnswers(firstDialog.id));
     }, []);
+
+    useEffect(() => {
+        console.log(currentDialog);
+
+        if (currentDialog !== undefined) {
+            setAnswers(narrationService.GetDialogAnswers(currentDialog!.id));
+        }
+    }, [currentDialog]);
 
     if (currentDialog === undefined){
         return <div></div>
@@ -43,7 +63,7 @@ const GamePage : NextPage = () => {
             </Card>
             <div className={"flex flex-col md:flex-row md:overflow-hidden md:flex-wrap md:justify-center"}>
                 {answers.map((answer, index) => {
-                    return <AnswerComponent answer={answer} key={index}/>
+                    return <AnswerComponent answer={answer} key={index} onClick={()=>AnswerClick(answer)}/>
                 })}
             </div>
         </div>
