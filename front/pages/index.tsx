@@ -7,34 +7,31 @@ import nyanCat from "/public/nyan-cat.gif"
 import { useEffect, useState } from "react";
 
 const Home = () => {
-    let router = useRouter()
-    let user: User  =  new User!("name", 0, 0)
-   const login  =async () =>{
-
-        setCookie('user',user )
-
-        await router.push('/game')
-    }
-
-    let [nyanCatDisplay, setNyanCatDisplay] = useState("none");
-
-    useEffect(() => {
-        let codes: string[] = ["n", "y", "a", "n"],
-            position: number = 0,
-            isNyanCatShown: boolean = false;
-        document.addEventListener('keydown', function (event: KeyboardEvent): void {
-            if (event.key === codes[position]) {
-                position++;
-                if (position === codes.length) {
-                    !isNyanCatShown ? setNyanCatDisplay("") : setNyanCatDisplay("none");
-                    isNyanCatShown = !isNyanCatShown ? true : false;
-                    position = 0;
-                }
-            } else {
-                position = 0;
-            }
-        })
-    }, [])
+  let router = useRouter();
+  let user: User = new User!("name", 0, 0);
+  const login = async () => {
+    setCookie('user',user);
+    await router.push('/game');
+  }
+  let [nyanCatDisplay, setNyanCatDisplay] = useState("none");
+  
+  useEffect(() => {
+    let codes: string[] = ["n", "y", "a", "n"],
+    position: number = 0,
+    isNyanCatShown: boolean = false;
+    document.addEventListener('keydown', function (event: KeyboardEvent): void {
+      if (event.key === codes[position]) {
+        position++;
+        if (position === codes.length) {
+          !isNyanCatShown ? setNyanCatDisplay("") : setNyanCatDisplay("none");
+          isNyanCatShown = !isNyanCatShown ? true : false;
+          position = 0;
+        }
+      } else {
+        position = 0;
+      }
+    })
+  }, [])
 
   return (
     <>
