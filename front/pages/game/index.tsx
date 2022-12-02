@@ -1,10 +1,20 @@
 import {NextPage} from "next";
-import {Button, Card, CardBody, CardFooter, CardHeader, Typography} from "@material-tailwind/react";
+import {
+    Button,
+    Card,
+    CardBody,
+    CardFooter,
+    CardHeader,
+    Dialog,
+    DialogBody,
+    DialogFooter, DialogHeader,
+    Typography
+} from "@material-tailwind/react";
 import WikilinkComponent from "./components/WikilinkComponent";
 import AnswerComponent from "./components/AnswerComponent";
 import Answer from "../../models/answer";
-import {useEffect, useState} from "react";
-import Dialog from "../../models/dialog";
+import {useEffect, useState, Fragment} from "react";
+import DialogClass from "../../models/dialog";
 import {getCookie} from "cookies-next";
 import User from "../../models/user";
 import MoveToNextDialog from "../../service/moveToNextDialog";
@@ -13,14 +23,23 @@ import narrationService from "../../service/narrationService";
 const GamePage : NextPage = () => {
 
     let [currentUser, setCurrentUser] = useState<User>();
-    let [currentDialog, setCurrentDialog] = useState<Dialog>();
+    let [currentDialog, setCurrentDialog] = useState<DialogClass>();
     let [answers, setAnswers] = useState<Answer[]>([]);
     let [canGoBack, setCanGoBack] = useState<boolean>(false);
+    let [deadEndPopup, setDeadEndPopup] = useState<Answer>();
+    const [open, setOpen] = useState(false);
+
+    const handleOpen = () => setOpen(!open);
 
     function AnswerClick(answer: Answer) {
         setCanGoBack(true);
-        narrationService.AddDialogToUserHistory(answer.id, currentUser!);
-        setCurrentDialog(MoveToNextDialog(currentUser!, currentDialog!, answer, narrationService.GetDialogs(), narrationService.GetAnswers()));
+        if (answer.deadend == false){
+            narrationService.AddDialogToUserHistory(answer.id, currentUser!);
+            setCurrentDialog(MoveToNextDialog(currentUser!, currentDialog!, answer, narrationService.GetDialogs(), narrationService.GetAnswers()));
+        } else {
+            handleOpen()
+            setDeadEndPopup(answer);
+        }
     }
 
     function GoBack() {
@@ -28,11 +47,12 @@ const GamePage : NextPage = () => {
             setCanGoBack(false);
             setCurrentDialog(narrationService.GetDialog(currentUser?.lastDialogId));
             narrationService.RemoveLastAction(currentUser!);
+            setDeadEndPopup(undefined);
         }
     }
 
     useEffect(() => {
-        let firstDialog : Dialog|undefined = narrationService.GetDialog(0);
+        let firstDialog : DialogClass|undefined = narrationService.GetDialog(0);
 
         let userCookie = getCookie("user");
         let user = (JSON.parse(userCookie as string) as unknown) as User;
@@ -80,11 +100,22 @@ const GamePage : NextPage = () => {
                     })}
                 </CardFooter>
             </Card>
-            <div className={"flex flex-col md:flex-row md:overflow-hidden md:flex-wrap md:justify-center"}>
-                {answers.map((answer, index) => {
-                    return <AnswerComponent answer={answer} key={index} onClick={()=>AnswerClick(answer)}/>
-                })}
-            </div>
+            {deadEndPopup === undefined?
+                <div className={"flex flex-col md:flex-row md:overflow-hidden md:flex-wrap md:justify-center"}>
+                    {answers.map((answer, index) => {
+                        return <AnswerComponent answer={answer} key={index} onClick={()=>AnswerClick(answer)} />
+                    })}
+                </div> :
+                <Fragment>
+                    <Dialog open={open} handler={handleOpen}>
+                            <DialogHeader>{deadEndPopup.deadend}</DialogHeader>
+                            <DialogBody divider>
+                                {deadEndPopup.deadend}
+                            </DialogBody>
+                    </Dialog>
+                </Fragment>
+            }
+
         </div>
     );
 }

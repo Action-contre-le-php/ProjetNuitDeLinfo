@@ -9,7 +9,8 @@
         "answersIds": [],
         "allMandatory": true
       }
-      ]
+      ],
+      "deadend": true
     },
     {
       "id": 1,
@@ -20,7 +21,8 @@
           "answersIds": [],
           "allMandatory": true
         }
-      ]
+      ],
+      "deadend": false
     },
     {
       "id": 2,
@@ -31,7 +33,8 @@
           "answersIds": [],
           "allMandatory": true
         }
-      ]
+      ],
+      "deadend": false
     },
     {
       "id": 3,
@@ -42,7 +45,8 @@
           "answersIds": [1],
           "allMandatory": true
         }
-      ]
+      ],
+      "deadend": false
     }
   ]
 }
