@@ -20,7 +20,7 @@ const GamePage : NextPage = () => {
     function AnswerClick(answer: Answer) {
         setCanGoBack(true);
         narrationService.AddDialogToUserHistory(answer.id, currentUser!);
-        setCurrentDialog(MoveToNextDialog(currentUser!, currentDialog!, answer, narrationService.GetDialogs()));
+        setCurrentDialog(MoveToNextDialog(currentUser!, currentDialog!, answer, narrationService.GetDialogs(), narrationService.GetAnswers()));
     }
 
     function GoBack() {
