@@ -13,7 +13,7 @@ const Home = () => {
         await router.push('/game')
     }
   return (
-    <div className='flex flex-col space-y-32 m-32 max-h-fit'>
+    <div className='flex flex-col space-y-16 m-20 max-h-fit'>
       <div className='self-center'>
         <h1>Jeu de la Vie</h1>
       </div>
