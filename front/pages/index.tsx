@@ -48,7 +48,7 @@ const Home = () => {
             Pourtant, nous faisons toujours face à une population générale qui manque cruellement d'information et d'éducation à la sexualité, et particulièrement chez les jeunes adultes débutant leur vie sexuelle. Tabous, non-dits, manque de cours d'éducation sexuelle en milieu scolaire et préjugés négatifs, sont autant de facteurs qui peuvent empêcher l'information de circuler et les personnes de s'épanouir.
           </p><br></br>
           <p>
-            Dans ce site vous y trouverez un serious game (accessible via le boutton ci-dessous). Ce serious game a pour objectif de sensibiliser les jeunes (mais aussi les plus agés) aux problématiques liées à la santé sexuelle aux travers d'une approche ludique et dédramatisante de la sexualité. Via ce jeu nous aimerions aider les plus jeunes à devenir acteurs de leur santé sexuelle.
+            Dans ce site vous y trouverez un serious game (accessible via le bouton ci-dessous). Ce serious game a pour objectif de sensibiliser les jeunes (mais aussi les plus agés) aux problématiques liées à la santé sexuelle aux travers d'une approche ludique et dédramatisante de la sexualité. Via ce jeu nous aimerions aider les plus jeunes à devenir acteurs de leur santé sexuelle.
           </p>
         </div>
         <div className='self-center'>
