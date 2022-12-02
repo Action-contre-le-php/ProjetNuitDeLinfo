@@ -9,10 +9,16 @@ export default function App({ Component, pageProps }: AppProps) {
     console.warn("Salut comment est ce que ça va ? Pensez à bien vous hydrater !");
 
   return (
-    <ThemeProvider>
-      <NavBar/>
-      <Component {...pageProps} />
-      <Footer/>
-    </ThemeProvider>
+    <div className="min-h-screen flex flex-col">
+      <ThemeProvider>
+        <NavBar/>
+        <div className="flex-grow">
+          <Component {...pageProps} />
+        </div>
+        <div className="w-full flex justify-center h-16">
+          <Footer/>
+        </div>
+      </ThemeProvider>
+    </div>
   );
 }
