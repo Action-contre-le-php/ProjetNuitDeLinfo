@@ -2,7 +2,7 @@ import {NextPage} from "next";
 import {Card, CardBody, CardFooter, Typography} from "@material-tailwind/react";
 import WikilinkComponent from "./components/WikilinkComponent";
 import AnswerComponent from "./components/AnswerComponent";
-import {Answer} from "../../models/answer";
+import Answer from "../../models/answer";
 
 const GamePage : NextPage = () => {
 
