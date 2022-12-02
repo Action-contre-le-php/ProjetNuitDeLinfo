@@ -35,75 +35,76 @@
       "dialogId": 4,
       "prerequisites": []
     },
-
     {
       "id": 5,
       "text": "Arrivant avec méfiance tu tente une percé à cette table en posant la question de ce qui semble les obnubiler à ce point la. suite à la question, un petit homme sous un drap avec de grosses lunettes fumées te regarde avec insistance et dit en zezotan : « FAIT UN ZÉ DE SCHANSS » réalisant que tu parle à des fans absolu de donjon et donjon et encore plus de donjon, tu te plie à leurs exigence et réaliser un 18 sur un dé à 20 faces, la table s’exclame, un homme te remercie et un autre pleure. Sans vraiment comprendre tu constate simplement que aussi vite ton action fini, les rôlistes semblent  t’ignorer. Tu reprend donc ton chemin vers les autres membres de la soirée.",
       "dialogId": 5,
-      "prerequisite": []
+      "prerequisites": []
     },
     {
       "id": 6,
       "text": "Constatant qu’une nouvelle partie de bière pong venait de commencer tu t’approche du groupe dont un nomme te saisi par les épaules pour te placer devant la table. Tout en titubant, il te dit « Prend HIC ma plass… ch’tiens plu... » devant l’offre généreuse, tu accepte et tu voit que ton adversaire est à peine éméchée. Vous commencer donc une partie endiablé durant laquelle tu boit quelques bières avant de triompher. Tu décide de te rendre dans le jardin histoire de dégriser.",
       "dialogId": 3,
-      "prerequisite": []
+      "prerequisites": []
     },
-
     {
       "id": 7,
       "text": "RETOUR AU CHOIX DES GROUPES",
       "dialogId": 4,
-      "prerequisite": []
+      "prerequisites": []
     },
-
     {
       "id": 8,
       "text": "Tu prends ton courage à deux main et décide de leur offrir. Premièrement ennuyer de ta présence le couple décolère à la vue de ton offre et acceptent avec joie. « Merci bien ! J’avais oublier les miennes ! Aller viens eux.. Mélanie ? » « Moi c’est Josiane ! » Devant le fait d’avoir visiblement sauver un coup d’un soir d’une potentiel IST, tu reparts vers la maison, à moins que tu n’ai pas rencontrer le groupe de la pergola, dans ce cas va les rencontrer avant. ( retire un préservatif de ton inventaire).",
       "dialogId": 9,
-      "prerequisite": [1,8]
+      "prerequisites": [
+        1,
+        8
+      ]
     },
     {
       "id": 9,
       "text": "Tu préfère les laisser vaquer à leurs occupation, « ils ont l’air de bien ce connaître, ils auront sans doute ce qu’il faut ! ». Convaincu, tu rentre dans la maison et te remet en cherche de conversation. Tu peux aller voir les groupes que tu a repérer avant de partir ou tu peux décider d’aller voir dans d’autres pièces si l’herbe est plus verte ailleurs.",
       "dialogId": 4,
-      "prerequisite": []
+      "prerequisites": []
     },
     {
       "id": 10,
       "text": "ramènes aux deux autres groupes",
-      "dialogId": ,
-      "prerequisite": []
+      "dialogId": -1,
+      "prerequisites": []
     },
-
     {
       "id": 11,
       "text": "tu accepte d’un coté par curiosité et d’un autre coté par gentillesse pour cet homme si amicale. tu prend une inspiration une fois la cigarette en bouche, en même temps l’homme ce présente sous le nom de Bob Marvey. Tu sens que la fumée de brûle les poumons et tu rend immédiatement la cigarette à son destinataire, avant de retourner dans le couloir",
       "dialogId": 12,
-      "prerequisite": []
+      "prerequisites": []
     },
     {
       "id": 12,
       "text": "Tu décline poliment l’offre de l’homme avant de rebrousser chemin.",
       "dialogId": 13,
-      "prerequisite": []
+      "prerequisites": []
     },
     {
       "id": 13,
       "text": "N’entendant pas de bruit si ce n’est des ronflement, visiblement les invités les plus fatigué sont déjà coucher. Mieux vaux ne pas y aller.",
       "dialogId": 13,
-      "prerequisite": []
+      "prerequisites": []
     },
-
     {
       "id": 14,
       "text": "Tu présente à Louise que tu est préparer à tout, elle te félicite pour ta prévention et t’encourage à continuer dans cette voit, la préparation n’étant pas le fort de tous. Le reste t’appartiens avec la jolie fille que tu à choisi. Une longue discutions va s’en suivre avec ta dulcinée dès demain par rapport à cette situation mais pour l’instant : profite ! ",
       "DeadEnd": true,
       "End": {
-        "Titre":"Fin louise Protéger",
+        "Titre": "Fin louise Protéger",
         "text": "Après plusieurs relation avec des partenaires différents, le risque que Louise ai possiblement attraper une IST est possible, elle attends les résultats de son dépistage et préfère éviter tout risques inutiles. Tu décide de rester en contact avec elle. Peut-être que tout cela mènera à une relation durable ? Tout cela et plus, dans le prochain chapitre ! ",
         "picture": "string"
       },
-      "prerequisite": [1,8]
+      "prerequisites": [
+        1,
+        8
+      ]
     },
     {
       "id": 15,
@@ -114,18 +115,21 @@
         "text": "Plusieurs expériences avec Louise et d’autres partenaires peu préparer ont pousser Érique à la plus grande des précaution. Il vous suggère de vous faire régulièrement tester si votre vie sexuelle s’épanoui et tu décide de suivre son conseil.Tu décide de rester en contact avec elle. Peut-être que tout cela mènera à une relation durable ? Tout cela et plus, dans le prochain chapitre !",
         "picture": "string"
       },
-      "prerequisite": []
+      "prerequisites": []
     },
     {
       "id": 16,
       "text": "Tu présente à Érique que tu est venu protéger et il te remercie de penser la où trop pense un préservatif inutile et te demande de continuer ainsi. Tu te laisse absorber par les traitements que te propose le propriétaire des lieux et tu prendra le temps demain matin de lui expliquer ta situation pour voir la suite de vos relations.",
       "DeadEnd": true,
-      "End":{
-      "Titre": "Fin Eric protéger",
+      "End": {
+        "Titre": "Fin Eric protéger",
         "text": "Après plusieurs relation avec des partenaires différents, le risque que Louise ai possiblement attraper une IST est possible, elle attends les résultats de son dépistage et préfère éviter tout risques inutiles. Tu décide de rester en contact avec elle. Peut-être que tout cela mènera à une relation durable ? Tout cela et plus, dans le prochain chapitre ! ",
         "picture": "string"
-    },
-      "prerequisite": [1,8]
+      },
+      "prerequisites": [
+        1,
+        8
+      ]
     },
     {
       "id": 17,
@@ -133,10 +137,10 @@
       "DeadEnd": true,
       "End": {
         "Titre": "Fin Eric non protéger",
-        "text":"Plusieurs expériences avec Louise et d’autres partenaires peu préparer ont pousser Érique à la plus grande des précaution. Il vous suggère de vous faire régulièrement tester si votre vie sexuelle s’épanoui et tu décide de suivre son conseil.Tu décide de rester en contact avec elle. Peut-être que tout cela mènera à une relation durable ? Tout cela et plus, dans le prochain chapitre !\n",
+        "text": "Plusieurs expériences avec Louise et d’autres partenaires peu préparer ont pousser Érique à la plus grande des précaution. Il vous suggère de vous faire régulièrement tester si votre vie sexuelle s’épanoui et tu décide de suivre son conseil.Tu décide de rester en contact avec elle. Peut-être que tout cela mènera à une relation durable ? Tout cela et plus, dans le prochain chapitre !\n",
         "picture": "string"
       },
-      "prerequisite": []
+      "prerequisites": []
     },
     {
       "id": 18,
@@ -147,7 +151,7 @@
         "text": "Tu as échapper à tout les stupres de cette soirée que tu regrettez légèrement et après votre 103847574939 eme excuse à Florent ce dernier te rassure « Ce n’est pas de ta faute ! Plutôt la mienne… La prochaine fois je t’enmènerais dans un bar qui s’appelle le checkpoint, des consoles et de la bière sa te branche ? » après avoir acquiescer tu le remercie du transport et rentre chez toi, épuiser de tes nouvelles expériences, tu t’endors tout habiller dans ton lit. Peut-être que d’autres personnes aurait pu t’aider à la soirée ?\n",
         "picture": "string"
       },
-      "prerequisite": []
+      "prerequisites": []
     },
     {
       "id": 19,
@@ -157,7 +161,9 @@
         "Titre": "Fin Alternative : BOB SALE.....",
         "text": "Après ton passage dans le petit salon, pendant que tu entend Érique et Louise parler, tu sens ton corps devenir plus léger, tu commence à voir des sons et entendre des couleurs. Une fois ce trip terminer, tu te réveille dans le lit d’une chambre que tu ne connais point, visiblement chez Louise et Frédérique. Une longue discutions va suivre avec le réveille de tes hôtes…."
       },
-      "prerequisite": [16]
+      "prerequisites": [
+        16
+      ]
     },
     {
       "id": 20,
@@ -168,7 +174,7 @@
         "text": "Tu décide au final de décliner l’offre de tes amis. Respectueux de ton consentement Érique t’ouvre la porte et salue ton courage d’avoir dit non si tu ne le désirais pas. La soirée ce fini, Florent te raccompagne chez toi en te promettant de t’emmener dans un bar sur le rétro gaming du coté de colmar. Tu accepte avec joie et une fois en tenue, tu t’allonge dans ton lit avant de sombrez dans les bras de morphée.",
         "picture": "string"
       },
-      "prerequisite": []
+      "prerequisites": []
     },
     {
       "id": 21,
@@ -179,56 +185,55 @@
         "test": "Bien que surprenante, tu offre à tes deux interlocuteur de s’épanouir à trois. Surpris par ton audace, ils acceptent et c’est donc à trois que vous procéder à un coït, protéger, vos deux  y accordant une importance particulière. Après tout ceci tu plonger dans les draps en satin du lit de tes hôtes en pensant à ce que tu leur dirras demain à propos de votre première expérience...",
         "picture": "string"
       },
-      "prerequisite": []
-    } ,
+      "prerequisites": []
+    },
     {
       "id": 22,
       "text": "En voiture, alors qu’il roule et que googeule maps lui in dique la route, Florent brise la glace et te dit «  t’as une tronche de déterrer, tout va bien ? »\n« ouais… la soirée de hier qui me tape dans la tête... » Réplique tu.\n« Boh t’en fait pas, tu te ferra peut-être une connaissance ce soir ! Qui sait ou ça t’emmènera... »\nContemplant le visage visiblement heureux de ça blague sur le visage de ton ami, tu te contente de lui sourire et profite du fait que vous arrivez à destination.\n\nDevant la gigantesque maison devant laquelle tu te trouve tu commence à paniquer avant de sentir la main de ton compagnon sur ton épaule avant qu’il ne te dispense une de ces paroles de sage : « soit cool ! Sourit juste et tout ira bien ! »  \n\nTu inspire et rentre dans la bâtisse où vous attendent une quantité folle d’invités, certains déjà ivre mort, beaucoup sont en train de discuter ou de jouer à un jeu de soirée le tout sur fond d’une douce musique sans doute choisi par l’hôte de la résidence. La tournure des évènements de ce soir risque de bien changer celons votre prochain choix : restez avec Florent ou aller voir de nouveau gens ?\n",
-      "dialogId": ,
-      "prerequisite": []
+      "dialogId": -1,
+      "prerequisites": []
     },
     {
       "id": 23,
       "text": "Les souvenirs de la veille te pèse et tu te ravise. Tu descend les marches de ton escalier trois par trois pour éviter de te mettre en retard d’autant plus que n’ayant pas le permit, c’est Florent qui c’est proposer pour t’emmener.\",\n",
-      "dialogId": ,
-      "prerequisite": []
+      "dialogId": -1,
+      "prerequisites": []
     },
     {
       "id": 24,
       "text": "Ça ne pèse pas grand-chose et que ça te serve ou non c’est toujours mieux de pouvoir ce protéger. ( ajoute un kit de contraception dans ton inventaire ). Florent, qui t’emmène à la soirée t’envoie un message pour savoir si tout va bien, tu comprend alors qu’il est en bas et dévale les marches pour le rejoindre.\",\n",
-      "dialogId": ,
-      "prerequisite": []
+      "dialogId": -1,
+      "prerequisites": []
     },
     {
       "id": 25,
       "text": "La soirée semble battre son plein et tu peux entendre que toutes les pièces semble occupé et posséder leurs ambiances ce mélangeant de manière hétéroclite. Le placard à balais et la salle de bain semble un mauvais choix, réduisant vos possibilité à trois : le petit salon, avec une ambiance ragea, la cuisine dans laquelle une contre-soirée semble être organiser et l’étage dans lequel un calme paisible semble régner. Où désires tu aller ?\\\",\\n\",\n",
-      "dialogId":7,
-      "prerequisite": []
+      "dialogId": 7,
+      "prerequisites": []
     },
     {
       "id": 26,
       "text": "Visiblement sobre et assez amicaux, tu te dirige vers le groupe de gens situé dans la pergola, composé de deux hommes et trois femmes  qui t’accepte sans la moindre difficulté. Alors que tu te demande de quoi tu pourrais parler, celui assis en face de toi inaugure le dialogue « Pit toi ? Tu en est à combien ? » dit il en te regardant.\\\\n\\\\n« De quoi ? » Réponds tu par réflexe à ton interlocuteur, muni d’un accent québécois à couper au couteau, qui reprends, « c’est combien ton nombre de corps ? », Dans un trait d’humour tu réplique « Ah bah 12 ! tous dans ma cave ! Comme tout le monde » l’air inquiet sur le visage de vos comparses te fait sentir que tu a louper ta blague avant qu’un éclat de rire générale ne te sauve de la honte absolu. « Non ! ton nombre de partenaire ! » te fait tu répondre par un tiers calmant son fou rire. Tu explique que tu n’avez jamais eu cette chance. Tes nouveaux amis te rassure sur la non importance de ce détail et te donne leurs différentes expériences : homosexuel, hétérosexuel, et même à plusieurs pour l’un d’entre eux. Tu sent un poids sur ta poitrine devenir plus léger et remercier ce groupe de gens qui te remette un préservatif adapté à ton sexe, ( à ajouter à l’inventaire ). tu décide de continuer ta route enrichit de tes nouvelles expériences. tu peux retournez dans la maison ou aller dans le jardin.\\\\n\\\",\\n\",\n",
       "dialogId": 2,
-      "prerequisite": []
-    } ,
+      "prerequisites": []
+    },
     {
       "id": 27,
-      "text": "Te voyant à l’aise et plutôt flatter, les frères et sœur ce répartisse dans la salle l’un fermant la porte l’autre les rideau, avant de s’approcher de toi et de te proposer une chose : « ça va sans doute te paraître rude mais… l’un de nous te plaît ? À moins que nous soyons tout les deux l’objet de tes désirs ?  Tu sait.. tu est pas mal dans ton genre »",
-      "dialogId":11,
-      "prerequisite": []
-    } ,
+      "text": "Te voyant à l’aise et plutôt flatter, les locataires ce répartisse dans la salle l’un fermant la porte l’autre les rideau, avant de s’approcher de toi et de te proposer une chose : « ça va sans doute te paraître rude mais… l’un de nous te plaît ? À moins que nous soyons tout les deux l’objet de tes désirs ?  Tu sait.. tu est pas mal dans ton genre »",
+      "dialogId": 10,
+      "prerequisites": []
+    },
     {
       "id": 28,
       "text": "C’est à Louise que tu ouvre ton cœur, elle t’emmène dans ça chambre",
-      "dialogId":8,
-      "prerequisite": []
+      "dialogId": 8,
+      "prerequisites": []
     },
     {
       "id": 28,
       "text": "C’est pour son coté mystérieux et assuré que tu te confie à Érique qui t’emmène dans ça chambre.",
-      "dialogId":,
-      "prerequisite": []
+      "dialogId": -1,
+      "prerequisites": []
     }
-
-
   ]
+}

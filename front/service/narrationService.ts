@@ -2,8 +2,8 @@ import Dialog from "../models/dialog";
 import Answer from "../models/answer";
 import User from "../models/user";
 
-let dialogs : Dialog[] = require('../test/dialogs.json')['dialogs'];
-let answers : Answer[] = require('../test/anwers.json')['answers'];
+let dialogs : Dialog[] = require('../public/story/dialogs.json')['dialogs'];
+let answers : Answer[] = require('../public/story/answers.json')['answers'];
 
 function GetDialogs(){
     return dialogs;
