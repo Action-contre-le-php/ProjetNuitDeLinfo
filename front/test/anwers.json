@@ -14,7 +14,7 @@
     {
       "id": 1,
       "text": "second answer",
-      "dialogId": 2,
+      "dialogId": 1,
       "prerequisites": [
         {
           "answersIds": [],
@@ -28,7 +28,7 @@
       "dialogId": 1,
       "prerequisites": [
         {
-          "answersIds": [1],
+          "answersIds": [],
           "allMandatory": true
         }
       ]
@@ -39,7 +39,7 @@
       "dialogId": 2,
       "prerequisites": [
         {
-          "answersIds": [2],
+          "answersIds": [1],
           "allMandatory": true
         }
       ]

@@ -21,7 +21,7 @@ export default function MoveToNextDialog (user: User, actualDialog: Dialog, answ
                         case true:{
                             for (let k: number = 0; k < answer.prerequisites[j].answersIds.length; k++){
                                 if (user.historyAnswersIds.indexOf(answer.prerequisites[j].answersIds[k]) == -1){
-                                    result.answersId.slice(i, 1);
+                                    result.answersId = result.answersId.slice(i, 1);
                                 }
                             }
                             break
@@ -35,7 +35,7 @@ export default function MoveToNextDialog (user: User, actualDialog: Dialog, answ
                                 }
                             }
                             if (count == answer.prerequisites[j].answersIds.length){
-                                result.answersId.slice(i, 1);
+                                result.answersId = result.answersId.slice(i, 1);
                             }
                             break
                         }
