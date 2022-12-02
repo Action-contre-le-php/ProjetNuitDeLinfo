@@ -37,7 +37,7 @@ const Home = () => {
   return (
     <>
       <div>
-        <Image src={nyanCat} alt="photo de l'équipe" style={{float: "left", display: nyanCatDisplay, zIndex: -1, position: "absolute", height: "100%", width: "auto", margin: "auto"}} />
+        <Image src={nyanCat} alt="photo de l'équipe" style={{float: "left", display: nyanCatDisplay, zIndex: -1, position: "absolute", margin: "auto"}} />
         <div className='flex flex-col space-y-32 m-32'>
           <div className='self-center'>
             <h1>Jeu de la Vie</h1>
