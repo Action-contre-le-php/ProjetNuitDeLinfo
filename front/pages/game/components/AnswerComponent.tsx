@@ -12,7 +12,7 @@ const AnswerComponent = ({answer, onClick}:AnswerComponentType) => {
         <Card onClick={()=>onClick()} className={"w-full md:w-[35rem] select-none cursor-pointer md:ml-5 mb-5 min-h-[10rem]"}>
             <CardBody>
                 <Typography>
-                    {answer.text}
+                    {answer ? answer.text : ""}
                 </Typography>
             </CardBody>
         </Card>
